@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		553CAA181D3F34F7000EB934 /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		553CAA181D3F34F7000EB934 /* 1Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		553CAA1B1D3F34F7000EB934 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		553CAA1C1D3F34F7000EB934 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		553CAA1F1D3F34F7000EB934 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,10 +48,10 @@
 		553CAA241D3F34F7000EB934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553CAA271D3F34F7000EB934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		553CAA291D3F34F7000EB934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		553CAA2E1D3F34F7000EB934 /* TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553CAA2E1D3F34F7000EB934 /* 1Timer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1Timer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		553CAA321D3F34F7000EB934 /* TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerTests.m; sourceTree = "<group>"; };
 		553CAA341D3F34F7000EB934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		553CAA391D3F34F7000EB934 /* TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553CAA391D3F34F7000EB934 /* 1Timer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1Timer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		553CAA3D1D3F34F7000EB934 /* TimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerUITests.m; sourceTree = "<group>"; };
 		553CAA3F1D3F34F7000EB934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553CAA4B1D3F7E80000EB934 /* time_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = time_over.wav; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		553CAA191D3F34F7000EB934 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				553CAA181D3F34F7000EB934 /* Timer.app */,
-				553CAA2E1D3F34F7000EB934 /* TimerTests.xctest */,
-				553CAA391D3F34F7000EB934 /* TimerUITests.xctest */,
+				553CAA181D3F34F7000EB934 /* 1Timer.app */,
+				553CAA2E1D3F34F7000EB934 /* 1Timer.xctest */,
+				553CAA391D3F34F7000EB934 /* 1Timer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		553CAA171D3F34F7000EB934 /* Timer */ = {
+		553CAA171D3F34F7000EB934 /* 1Timer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 553CAA421D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "Timer" */;
+			buildConfigurationList = 553CAA421D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "1Timer" */;
 			buildPhases = (
 				553CAA141D3F34F7000EB934 /* Sources */,
 				553CAA151D3F34F7000EB934 /* Frameworks */,
@@ -167,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = Timer;
+			name = 1Timer;
 			productName = Timer;
-			productReference = 553CAA181D3F34F7000EB934 /* Timer.app */;
+			productReference = 553CAA181D3F34F7000EB934 /* 1Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		553CAA2D1D3F34F7000EB934 /* TimerTests */ = {
+		553CAA2D1D3F34F7000EB934 /* 1TimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 553CAA451D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "TimerTests" */;
+			buildConfigurationList = 553CAA451D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "1TimerTests" */;
 			buildPhases = (
 				553CAA2A1D3F34F7000EB934 /* Sources */,
 				553CAA2B1D3F34F7000EB934 /* Frameworks */,
@@ -185,14 +185,14 @@
 			dependencies = (
 				553CAA301D3F34F7000EB934 /* PBXTargetDependency */,
 			);
-			name = TimerTests;
+			name = 1TimerTests;
 			productName = TimerTests;
-			productReference = 553CAA2E1D3F34F7000EB934 /* TimerTests.xctest */;
+			productReference = 553CAA2E1D3F34F7000EB934 /* 1Timer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		553CAA381D3F34F7000EB934 /* TimerUITests */ = {
+		553CAA381D3F34F7000EB934 /* 1TimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 553CAA481D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "TimerUITests" */;
+			buildConfigurationList = 553CAA481D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "1TimerUITests" */;
 			buildPhases = (
 				553CAA351D3F34F7000EB934 /* Sources */,
 				553CAA361D3F34F7000EB934 /* Frameworks */,
@@ -203,9 +203,9 @@
 			dependencies = (
 				553CAA3B1D3F34F7000EB934 /* PBXTargetDependency */,
 			);
-			name = TimerUITests;
+			name = 1TimerUITests;
 			productName = TimerUITests;
-			productReference = 553CAA391D3F34F7000EB934 /* TimerUITests.xctest */;
+			productReference = 553CAA391D3F34F7000EB934 /* 1Timer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -219,6 +219,7 @@
 				TargetAttributes = {
 					553CAA171D3F34F7000EB934 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C5X6D3A359;
 					};
 					553CAA2D1D3F34F7000EB934 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -230,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 553CAA131D3F34F7000EB934 /* Build configuration list for PBXProject "Timer" */;
+			buildConfigurationList = 553CAA131D3F34F7000EB934 /* Build configuration list for PBXProject "1Timer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,9 +244,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				553CAA171D3F34F7000EB934 /* Timer */,
-				553CAA2D1D3F34F7000EB934 /* TimerTests */,
-				553CAA381D3F34F7000EB934 /* TimerUITests */,
+				553CAA171D3F34F7000EB934 /* 1Timer */,
+				553CAA2D1D3F34F7000EB934 /* 1TimerTests */,
+				553CAA381D3F34F7000EB934 /* 1TimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		553CAA301D3F34F7000EB934 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 553CAA171D3F34F7000EB934 /* Timer */;
+			target = 553CAA171D3F34F7000EB934 /* 1Timer */;
 			targetProxy = 553CAA2F1D3F34F7000EB934 /* PBXContainerItemProxy */;
 		};
 		553CAA3B1D3F34F7000EB934 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 553CAA171D3F34F7000EB934 /* Timer */;
+			target = 553CAA171D3F34F7000EB934 /* 1Timer */;
 			targetProxy = 553CAA3A1D3F34F7000EB934 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -372,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -410,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -420,11 +421,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.Timer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.1Timer;
+				PRODUCT_NAME = 1Timer;
 			};
 			name = Debug;
 		};
@@ -432,11 +434,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.Timer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.1Timer;
+				PRODUCT_NAME = 1Timer;
 			};
 			name = Release;
 		};
@@ -448,8 +451,8 @@
 				INFOPLIST_FILE = TimerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.TimerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timer.app/Contents/MacOS/Timer";
+				PRODUCT_NAME = 1Timer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1Timer.app/Contents/MacOS/1Timer";
 			};
 			name = Debug;
 		};
@@ -461,8 +464,8 @@
 				INFOPLIST_FILE = TimerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.TimerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timer.app/Contents/MacOS/Timer";
+				PRODUCT_NAME = 1Timer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1Timer.app/Contents/MacOS/1Timer";
 			};
 			name = Release;
 		};
@@ -473,7 +476,7 @@
 				INFOPLIST_FILE = TimerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.TimerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 1Timer;
 				TEST_TARGET_NAME = Timer;
 			};
 			name = Debug;
@@ -485,7 +488,7 @@
 				INFOPLIST_FILE = TimerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.TimerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 1Timer;
 				TEST_TARGET_NAME = Timer;
 			};
 			name = Release;
@@ -493,7 +496,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		553CAA131D3F34F7000EB934 /* Build configuration list for PBXProject "Timer" */ = {
+		553CAA131D3F34F7000EB934 /* Build configuration list for PBXProject "1Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553CAA401D3F34F7000EB934 /* Debug */,
@@ -502,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		553CAA421D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "Timer" */ = {
+		553CAA421D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "1Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553CAA431D3F34F7000EB934 /* Debug */,
@@ -510,7 +513,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		553CAA451D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "TimerTests" */ = {
+		553CAA451D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "1TimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553CAA461D3F34F7000EB934 /* Debug */,
@@ -518,7 +521,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		553CAA481D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "TimerUITests" */ = {
+		553CAA481D3F34F7000EB934 /* Build configuration list for PBXNativeTarget "1TimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553CAA491D3F34F7000EB934 /* Debug */,

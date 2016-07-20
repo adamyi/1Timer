@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  Timer
+//  1Timer
 //
 //  Created by YiXuan on 7/20/16.
 //  Copyright © 2016 Adam Yi. All rights reserved.
