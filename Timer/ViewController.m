@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 BOOL started = FALSE;
+BOOL timeup = FALSE;
 int timeLeft = 60;
 int totalTimeMinute = 10;
 int totalTimeSecond = 0;
@@ -32,7 +33,8 @@ int totalTimeSecond = 0;
         [_startButton setTitle:@"Start"];
     }
     else {
-        if ([self initialIndividual] > (totalTimeMinute * 60 + totalTimeSecond)) {
+        //NSLog(@"%d %d %d %d %d", timeLeft, [self initialIndividual], (totalTimeMinute * 60 + totalTimeSecond), totalTimeMinute, totalTimeSecond);
+        if (timeup && [self initialIndividual] > (totalTimeMinute * 60 + totalTimeSecond)) {
             [self reset:nil];
         }
         started = TRUE;
@@ -98,6 +100,7 @@ int totalTimeSecond = 0;
             //[sound release];
             started = FALSE;
             [_startButton setTitle:@"Start"];
+            timeup = TRUE;
             return;
         }
         if (timeLeft <= 0)
@@ -109,8 +112,10 @@ int totalTimeSecond = 0;
             [_startButton setTitle:@"Start"];
             timeLeft = [self initialIndividual];
             //[self updateLabel];
+            timeup = TRUE;
             return;
         }
+        timeup = FALSE;
         timeLeft --;
         totalTimeSecond --;
         if (totalTimeSecond < 0)

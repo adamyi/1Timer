@@ -16,6 +16,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSLog(@"1Timer - A simple MUN timer for Mac OS.\nProudly released by Adam Yi. Under MIT License.");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
