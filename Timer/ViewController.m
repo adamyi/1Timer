@@ -3,7 +3,11 @@
 //  1Timer
 //
 //  Created by YiXuan on 7/20/16.
-//  Copyright © 2016 Adam Yi. All rights reserved.
+//  Copyright © 2016 - 2017 Adam Yi.
+//
+//  Use of this source code is governed by a MIT-style
+//  license that can be found in the LICENSE file or at
+//  https://opensource.org/licenses/MIT.
 //
 
 #import "ViewController.h"
@@ -28,6 +32,7 @@ int totalTimeSecond = 0;
 }
 
 - (IBAction)start:(id)sender {
+    [[[self view] window] makeFirstResponder:nil];
     if (started) {
         started = FALSE;
         [_startButton setTitle:@"Start"];
@@ -44,6 +49,7 @@ int totalTimeSecond = 0;
 }
 
 - (IBAction)next:(id)sender {
+    [[[self view] window] makeFirstResponder:nil];
     started = FALSE;
     [_startButton setTitle:@"Start"];
     timeLeft = [self initialIndividual];
@@ -51,6 +57,7 @@ int totalTimeSecond = 0;
 }
 
 - (IBAction)reset:(id)sender {
+    [[[self view] window] makeFirstResponder:nil];
     started = FALSE;
     [_startButton setTitle:@"Start"];
     timeLeft = [self initialIndividual];
