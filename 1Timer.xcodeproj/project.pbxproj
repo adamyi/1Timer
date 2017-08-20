@@ -59,6 +59,7 @@
 		553CAA551D3FB449000EB934 /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO.png; sourceTree = "<group>"; };
 		553CAA571D3FB4CC000EB934 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		553CAA591D3FB4E8000EB934 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F7BF14201F48040C00B14179 /* 1Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 1Timer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		553CAA0F1D3F34F7000EB934 = {
 			isa = PBXGroup;
 			children = (
+				F7BF14201F48040C00B14179 /* 1Timer.entitlements */,
 				553CAA571D3FB4CC000EB934 /* LICENSE */,
 				553CAA591D3FB4E8000EB934 /* README.md */,
 				553CAA1A1D3F34F7000EB934 /* Timer */,
@@ -221,6 +223,11 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = C5X6D3A359;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					553CAA2D1D3F34F7000EB934 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -422,12 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 1Timer.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C5X6D3A359;
 				INFOPLIST_FILE = Timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.1Timer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.1timer;
 				PRODUCT_NAME = 1Timer;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -437,12 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 1Timer.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C5X6D3A359;
 				INFOPLIST_FILE = Timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.1Timer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamyi.1timer;
 				PRODUCT_NAME = 1Timer;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
