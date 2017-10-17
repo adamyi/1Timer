@@ -1,7 +1,7 @@
 ![Screenshot](images/appstore.jpg)
 1Timer
 ------
-A simple MUN Timer for macOS. It offers two timers inside, one for individual timing while the other for whole timing. It is designed by Adam Yi, first used for FDUIMUN2016 IIF.
+A simple MUN Timer for macOS. It offers two timers inside, one for individual timing while the other for overall timing. It is designed by [Adam Yi](https://yiad.am), first used for FDUIMUN2016 IIF.
 
 ### Usage
 
@@ -10,6 +10,10 @@ Set the individual time (seconds), total time (seconds). Click "Reset". Then cli
 To begin with, visit the [App Store](https://itunes.apple.com/cn/app/1timer/id1273511199?l=en&mt=12) to download the newest release. The software is so easy to use that you will figure out how it works even without this tutorial and begin to fall in love with it.
 
 If you do feel the need to add your conference logo to the GUI of the app, or change the default sounds, feel free to download the source code and recompile it. You are more than welcomed to submit pull requests to this repo as well.
+
+### Development
+
+While you could develop with Xcode, you are also welcome to build the app with [Bazel](https://bazel.build/) (macos support is still in alpha testing, but it should be fun to play with).
 
 ### License
 
