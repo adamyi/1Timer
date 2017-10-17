@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TimerViewController.h
 //  1Timer
 //
 //  Created by YiXuan on 7/20/16.
@@ -12,7 +12,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface TimerViewController : NSViewController
 
 
 @property (weak) IBOutlet NSTextField *timeLeftTextField;

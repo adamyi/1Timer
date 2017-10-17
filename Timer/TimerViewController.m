@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  TimerViewController.m
 //  1Timer
 //
 //  Created by YiXuan on 7/20/16.
@@ -10,19 +10,18 @@
 //  https://opensource.org/licenses/MIT.
 //
 
-#import "ViewController.h"
+#import "TimerViewController.h"
+#import "TimerStatus.h"
 
-BOOL started = FALSE;
-BOOL timeup = FALSE;
-int timeLeft = 60;
-int totalTimeMinute = 10;
-int totalTimeSecond = 0;
-
-@implementation ViewController
+@implementation TimerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[TimerStatus sharedInstance] setStarted:FALSE];
+    [[TimerStatus sharedInstance] setTimeup:FALSE];
+    [[TimerStatus sharedInstance] setIndividualTime:60];
+    [[TimerStatus sharedInstance] setTotalTime:[[Time alloc] initWithMinutes:10 seconds:0]];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -33,16 +32,16 @@ int totalTimeSecond = 0;
 
 - (IBAction)start:(id)sender {
     [[[self view] window] makeFirstResponder:nil];
-    if (started) {
-        started = FALSE;
+    if ([[TimerStatus sharedInstance] started]) {
+        [[TimerStatus sharedInstance] setStarted:FALSE];
         [_startButton setTitle:@"Start"];
     }
     else {
         //NSLog(@"%d %d %d %d %d", timeLeft, [self initialIndividual], (totalTimeMinute * 60 + totalTimeSecond), totalTimeMinute, totalTimeSecond);
-        if (timeup && [self initialIndividual] > (totalTimeMinute * 60 + totalTimeSecond)) {
+        if ([[TimerStatus sharedInstance] timeup] && [self initialIndividual] > [[[TimerStatus sharedInstance] totalTime] totalSeconds]) {
             [self reset:nil];
         }
-        started = TRUE;
+        [[TimerStatus sharedInstance] setStarted:TRUE];
         [_startButton setTitle:@"Pause"];
         [self tick:nil];
     }
@@ -50,35 +49,38 @@ int totalTimeSecond = 0;
 
 - (IBAction)next:(id)sender {
     [[[self view] window] makeFirstResponder:nil];
-    started = FALSE;
+    [[TimerStatus sharedInstance] setStarted:FALSE];
     [_startButton setTitle:@"Start"];
-    timeLeft = [self initialIndividual];
+    [[TimerStatus sharedInstance] setIndividualTime:[self initialIndividual]];
     [self updateLabel];
 }
 
 - (IBAction)reset:(id)sender {
     [[[self view] window] makeFirstResponder:nil];
-    started = FALSE;
+    [[TimerStatus sharedInstance] setStarted:FALSE];
     [_startButton setTitle:@"Start"];
-    timeLeft = [self initialIndividual];
-    totalTimeMinute = [self initialMinute];
-    totalTimeSecond = [self initialSecond];
+    [[TimerStatus sharedInstance] setIndividualTime:[self initialIndividual]];
+    [[TimerStatus sharedInstance] setTotalTime:[[Time alloc] initWithSeconds:[self initialTotalSeconds]]];
     [self updateLabel];
+}
+
+- (int)initialTotalSeconds {
+    return [[_initialTimeTextField stringValue] intValue];
+}
+
+- (int)initialMinute {
+    return [self initialTotalSeconds] / 60;
+}
+
+- (int)initialSecond {
+    return [self initialTotalSeconds] % 60;
 }
 
 - (int)initialIndividual {
     int ret = [[_initialIndividualTextField stringValue] intValue];
     if ( ret <= 0)
-        ret = [[_initialTimeTextField stringValue] intValue];
+        ret = [self initialTotalSeconds];
     return ret;
-}
-
-- (int)initialMinute {
-    return [[_initialTimeTextField stringValue] intValue] / 60;
-}
-
-- (int)initialSecond {
-    return [[_initialTimeTextField stringValue] intValue] % 60;
 }
 
 - (int)alarmTime {
@@ -86,52 +88,50 @@ int totalTimeSecond = 0;
 }
 
 -(void) updateLabel {
-    NSString *timeLeftStr = [NSString stringWithFormat:@"%i", timeLeft];
-    NSString *totalTime = [NSString stringWithFormat:@"%02i : %02i", totalTimeMinute, totalTimeSecond];
+    NSString *timeLeftStr = [NSString stringWithFormat:@"%i", [[TimerStatus sharedInstance] individualTime]];
+    NSString *totalTime = [[[TimerStatus sharedInstance] totalTime] toString];
     [_timeLeftTextField setStringValue:timeLeftStr];
     [_totalTimeLeftTextField setStringValue:totalTime];
 }
 
 - (void) tick:(id)sender {
-    if (started)
+    if ([[TimerStatus sharedInstance] started])
     {
+        int individualTime = [[TimerStatus sharedInstance] individualTime];
+        Time *totalTime = [[TimerStatus sharedInstance] totalTime];
+        
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
         [self performSelector:@selector(tick:) withObject:nil afterDelay:1.0];
         //[self ]
         //[NSOperationQueue reque]
         //dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1ull*NSEC_PER_SEC), dispatch_get_main_queue(), ^{[self tick:nil];});
-        if (totalTimeMinute <= 0 && totalTimeSecond <= 0)
+        if (totalTime.totalSeconds <= 0)
         {
             NSSound *sound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"time_over" ofType:@"wav"] byReference:NO];
             [sound play];
             //[sound release];
-            started = FALSE;
+            [[TimerStatus sharedInstance] setStarted:FALSE];
             [_startButton setTitle:@"Start"];
-            timeup = TRUE;
+            [[TimerStatus sharedInstance] setTimeup:TRUE];
             return;
         }
-        if (timeLeft <= 0)
+        if (individualTime <= 0)
         {
             NSSound *sound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"time_over" ofType:@"wav"] byReference:NO];
             [sound play];
             //[sound release];
-            started = FALSE;
+            [[TimerStatus sharedInstance] setStarted:FALSE];
             [_startButton setTitle:@"Start"];
-            timeLeft = [self initialIndividual];
+            [[TimerStatus sharedInstance] setIndividualTime:[self initialIndividual]];
             //[self updateLabel];
-            timeup = TRUE;
+            [[TimerStatus sharedInstance] setTimeup:TRUE];
             return;
         }
-        timeup = FALSE;
-        timeLeft --;
-        totalTimeSecond --;
-        if (totalTimeSecond < 0)
-        {
-            totalTimeSecond = 59;
-            totalTimeMinute --;
-        }
+        [[TimerStatus sharedInstance] setTimeup:FALSE];
+        [[TimerStatus sharedInstance] setIndividualTime: individualTime - 1];
+        [totalTime minusOneSecond];
         [self updateLabel];
-        if (timeLeft == [self alarmTime]) {
+        if (individualTime == [self alarmTime]) {
             NSSound *sound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"buzzer" ofType:@"wav"] byReference:NO];
             [sound play];
         }

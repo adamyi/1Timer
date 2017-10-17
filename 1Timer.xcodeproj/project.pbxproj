@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		553CAA1D1D3F34F7000EB934 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CAA1C1D3F34F7000EB934 /* AppDelegate.m */; };
 		553CAA201D3F34F7000EB934 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CAA1F1D3F34F7000EB934 /* main.m */; };
-		553CAA231D3F34F7000EB934 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CAA221D3F34F7000EB934 /* ViewController.m */; };
+		553CAA231D3F34F7000EB934 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CAA221D3F34F7000EB934 /* TimerViewController.m */; };
 		553CAA251D3F34F7000EB934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553CAA241D3F34F7000EB934 /* Assets.xcassets */; };
 		553CAA281D3F34F7000EB934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553CAA261D3F34F7000EB934 /* Main.storyboard */; };
 		553CAA331D3F34F7000EB934 /* TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CAA321D3F34F7000EB934 /* TimerTests.m */; };
@@ -19,6 +19,8 @@
 		553CAA561D3FB449000EB934 /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 553CAA551D3FB449000EB934 /* LOGO.png */; };
 		553CAA581D3FB4CC000EB934 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 553CAA571D3FB4CC000EB934 /* LICENSE */; };
 		553CAA5A1D3FB4E8000EB934 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 553CAA591D3FB4E8000EB934 /* README.md */; };
+		F7ACE5171F64042100FD5F53 /* TimerStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ACE5161F64042100FD5F53 /* TimerStatus.m */; };
+		F7ACE51A1F640FA500FD5F53 /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ACE5191F640FA500FD5F53 /* Time.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +45,8 @@
 		553CAA1B1D3F34F7000EB934 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		553CAA1C1D3F34F7000EB934 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		553CAA1F1D3F34F7000EB934 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		553CAA211D3F34F7000EB934 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		553CAA221D3F34F7000EB934 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		553CAA211D3F34F7000EB934 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		553CAA221D3F34F7000EB934 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		553CAA241D3F34F7000EB934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553CAA271D3F34F7000EB934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		553CAA291D3F34F7000EB934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +61,10 @@
 		553CAA551D3FB449000EB934 /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO.png; sourceTree = "<group>"; };
 		553CAA571D3FB4CC000EB934 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		553CAA591D3FB4E8000EB934 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F7ACE5151F64042100FD5F53 /* TimerStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerStatus.h; sourceTree = "<group>"; };
+		F7ACE5161F64042100FD5F53 /* TimerStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerStatus.m; sourceTree = "<group>"; };
+		F7ACE5181F640FA500FD5F53 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		F7ACE5191F640FA500FD5F53 /* Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Time.m; sourceTree = "<group>"; };
 		F7BF14201F48040C00B14179 /* 1Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 1Timer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,8 +121,12 @@
 			children = (
 				553CAA1B1D3F34F7000EB934 /* AppDelegate.h */,
 				553CAA1C1D3F34F7000EB934 /* AppDelegate.m */,
-				553CAA211D3F34F7000EB934 /* ViewController.h */,
-				553CAA221D3F34F7000EB934 /* ViewController.m */,
+				553CAA211D3F34F7000EB934 /* TimerViewController.h */,
+				553CAA221D3F34F7000EB934 /* TimerViewController.m */,
+				F7ACE5181F640FA500FD5F53 /* Time.h */,
+				F7ACE5191F640FA500FD5F53 /* Time.m */,
+				F7ACE5151F64042100FD5F53 /* TimerStatus.h */,
+				F7ACE5161F64042100FD5F53 /* TimerStatus.m */,
 				553CAA241D3F34F7000EB934 /* Assets.xcassets */,
 				553CAA261D3F34F7000EB934 /* Main.storyboard */,
 				553CAA291D3F34F7000EB934 /* Info.plist */,
@@ -216,7 +226,7 @@
 		553CAA101D3F34F7000EB934 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Adam Yi";
 				TargetAttributes = {
 					553CAA171D3F34F7000EB934 = {
@@ -294,10 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553CAA231D3F34F7000EB934 /* ViewController.m in Sources */,
+				553CAA231D3F34F7000EB934 /* TimerViewController.m in Sources */,
 				553CAA201D3F34F7000EB934 /* main.m in Sources */,
+				F7ACE51A1F640FA500FD5F53 /* Time.m in Sources */,
 				553CAA5A1D3FB4E8000EB934 /* README.md in Sources */,
 				553CAA1D1D3F34F7000EB934 /* AppDelegate.m in Sources */,
+				F7ACE5171F64042100FD5F53 /* TimerStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +370,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -402,8 +416,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
